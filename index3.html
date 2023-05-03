@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        body {
+            background-color: rgb(236, 230, 230);
+        }
+
+        .navbar-collapse {
+            justify-content: end;
+        }
+
+        .logo-image {
+            max-width: 200px;
+        }
+
+
+        @keyframes morph1 {
+
+            0%,
+            100% {
+                border-radius: 50%;
+                transform: rotate(360deg);
+                /* background-color: rgb(255, 230, 0); */
+            }
+
+            50% {
+                border-radius: 0%;
+                transform: rotate(360deg);
+                /* background-color:rgb(252, 181, 50); */
+            }
+        }
+
+        .primary-button {
+
+            -webkit-animation: morph1 2.6s 0s linear infinite, morph-opacity 0.4s 1s ease-out both;
+            -ms-animation: morph1 2.6s 0s linear infinite, morph-opacity 0.4s 1s ease-out both;
+            animation: morph1 2.6s 0s linear infinite, morph-opacity 0.4s 1s ease-out both;
+            border-radius: 49% 51% 56% 44% / 49% 48% 52% 51%;
+            /* z-index: 2; */
+            /* top: -10px; */
+            transform: rotate(0deg);
+            /* width:30%;
+    height:30%; */
+            /* position: absolute; */
+        }
+
+        .second-section-image {
+
+            width: 200px;
+            align-content: center;
+        }
+
+        .box1 {
+            height: 370px;
+            width: 340px;
+            background-color: rgb(177, 233, 214);
+        }
+
+        .primary-button-first {
+            width: 150px;
+            height: 40px;
+            border-radius: 0px;
+        }
+
+        .box2 {
+            height: 350px;
+            width: 100px;
+            background-color: rgb(177, 233, 214);
+        }
+
+        .box3 {
+            height: 350px;
+            width: 100px;
+            background-color: rgb(247, 210, 216);
+        }
+
+        .box4 {
+            height: 350px;
+            width: 100px;
+            background-color: rgb(230, 186, 147);
+
+        }
+
+        .box5 {
+            height: 350px;
+            width: 100px;
+            background-color: rgb(248, 181, 192);
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm  navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img class="img-fluid logo-image" src="/assets/beautynation-logo-09.png" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon bg-dark"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link text-dark me-4" href="#">Search</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark me-4" href="#">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark me-4" href="#">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark me-4" href="#">Contact us</a>
+                    </li>
+                </ul>
+                <button class="btn btn-outline-warning primary-button">
+                    Sign in
+                </button>
+            </div>
+        </div>
+    </nav>
+    <hr class="text-warning">
+    </header>
+
+    <section>
+        <!-- First Section -->
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="d-flex justify-content-start">
+                        <p class="text-secondary">HOME / CATLOG /
+                        <p> DREAMSTICK CREAM BRONZER</p>
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="col-sm-2">
+                    <div class="d-flex justify-content-start ">
+                        <img class="img-fluid second-section-image" src="/assets/istockphoto-1296394682-612x612.jpg"
+                            alt="">
+                    </div>
+                    <div class="d-flex justify-content-start mt-4">
+                        <img class="img-fluid second-section-image" src="/assets/istockphoto-952087408-612x612.jpg"
+                            alt="">
+                    </div>
+                    <div class="d-flex justify-content-start mt-4">
+                        <img class="img-fluid second-section-image"
+                            src="/assets/360_F_390341049_JvisbDMWnUFy7WatpUjVGf9NJk5HkQRt.jpg" alt="">
+                    </div>
+                </div>
+
+
+                <div class="col-sm-4">
+                    <div class="d-flex justify-content-start  box1">
+                        <i class="fa-regular fa-heart ms-2 mt-2"></i>
+                        <img class="img-fluid" src="/assets/large_1631294836-removebg-preview.png" alt="">
+                    </div>
+
+                </div>
+
+                <div class="col-sm-6">
+                    <div class="d-flex justify-content-start">
+                        <h2>DREAMSTICK CREAM BRONZER</h2>
+
+                    </div>
+                    <div class="d-flex justify-content-start">
+                        <i class="fa-solid fa-star text-warning"></i>
+                        <i class="fa-solid fa-star text-warning"></i>
+                        <i class="fa-solid fa-star text-warning"></i>
+                        <i class="fa-solid fa-star text-warning"></i>
+                        <i class="fa-sharp fa-regular fa-star text-secondary"></i>
+                        <p class="ms-4 text-secondary">4.7 | 89 reviews</p>
+                    </div>
+                    <div class="d-flex justify-content-start text-secondary">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            Vel, suscipit alias. Velit necessitatibus adipisci nostrum impedit enim totam,
+                            pariatur error voluptatum.
+                            Eos itaque repellendus nisi molestiae? Porro sequi sunt rem.
+                        </p>
+                    </div>
+
+                    <div class="d-flex justify-content-start">
+                        <h2>$20.99</h2>
+                    </div>
+
+                    <div class="d-flex justify-content-start">
+                        <button class="btn btn-outline-warning primary-button-first text-secondary">+ 0 -</button>
+                        <button class="btn btn-warning primary-button-first text-secondary">Add to card</button>
+                    </div>
+
+                    <div class="d-flex justify-content-start mt-3">
+                        <h6 class="text-warning">HOW TO USE</h6>
+                        <h6 class=" ms-4 text-secondary">INGREDIENTS</h6>
+                        <h6 class=" ms-4 text-secondary">PAYMENT AND DELIVERY</h6>
+
+                    </div>
+
+                    <div class="d-flex justify-content-start mb-5 text-secondary">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, dicta
+                            necessitatibus dolorem distinctio nihil ipsum nemo! Ducimus quasi
+                            laborum sunt eveniet a non? Facilis nobis quos expedita et, omnis voluptatem!</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-12 text-warning">
+                    <h6>YOU MAY ALSO LIKE</h6>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="d-flex">
+                        <div class="p-2 ms-3  flex-fill box2">
+                            <i class="fa-regular fa-heart ms-2 mt-2"></i>
+                            <img class="img-fluid"
+                            src="assets/31av5tR14oL-removebg-preview.png" alt="">
+                            <p>Swipe Up * BROW GEL</p>
+                            <p>$20.99</p>
+                           
+                        </div>
+                        <div class="p-2 ms-3  flex-fill box3">
+                            <i class="fa-regular fa-heart ms-2 mt-2"></i>
+                            <img class="img-fluid mt-5"
+                            src="assets/large_1631294836-removebg-preview.png" alt="">
+                            <p class="mt-3">DREAMSTICK CREAM BRONZER</p>
+                            <p>$20.99</p>
+                        </div>
+                        <div class="p-2 ms-3 flex-fill box4">
+                            <i class="fa-regular fa-heart ms-2 mt-2"></i>
+                            <img class="img-fluid"
+                            src="assets/pouch.png" alt="">
+                            <p>SUPERBLUSH</p>
+                            <p>$20.99</p>
+                        </div>
+                        <div class="p-2 ms-3  flex-fill box5">
+                            <i class="fa-regular fa-heart ms-2 mt-2"></i>
+                            <img class="img-fluid mt-4"
+                            src="assets/picture.png" alt="">
+                            <p>THE POUCH MAKEUP BAG</p>
+                            <p>$20.99</p>
+                        </div>
+                      </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+
+</html>
