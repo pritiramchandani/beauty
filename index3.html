@@ -28,37 +28,6 @@
             max-width: 200px;
         }
 
-
-        @keyframes morph1 {
-
-            0%,
-            100% {
-                border-radius: 50%;
-                transform: rotate(360deg);
-                /* background-color: rgb(255, 230, 0); */
-            }
-
-            50% {
-                border-radius: 0%;
-                transform: rotate(360deg);
-                /* background-color:rgb(252, 181, 50); */
-            }
-        }
-
-        .primary-button {
-
-            -webkit-animation: morph1 2.6s 0s linear infinite, morph-opacity 0.4s 1s ease-out both;
-            -ms-animation: morph1 2.6s 0s linear infinite, morph-opacity 0.4s 1s ease-out both;
-            animation: morph1 2.6s 0s linear infinite, morph-opacity 0.4s 1s ease-out both;
-            border-radius: 49% 51% 56% 44% / 49% 48% 52% 51%;
-            /* z-index: 2; */
-            /* top: -10px; */
-            transform: rotate(0deg);
-            /* width:30%;
-    height:30%; */
-            /* position: absolute; */
-        }
-
         .second-section-image {
 
             width: 200px;
@@ -67,8 +36,9 @@
 
         .box1 {
             height: 370px;
-            width: 340px;
+            width:300px;
             background-color: rgb(177, 233, 214);
+            text-align: center;
         }
 
         .primary-button-first {
@@ -78,29 +48,124 @@
         }
 
         .box2 {
-            height: 350px;
+            height: 370px;
             width: 100px;
             background-color: rgb(177, 233, 214);
+            text-align: center;
         }
 
         .box3 {
-            height: 350px;
+            height: 370px;
             width: 100px;
             background-color: rgb(247, 210, 216);
+            text-align: center;
         }
 
         .box4 {
-            height: 350px;
+            height: 370px;
             width: 100px;
             background-color: rgb(230, 186, 147);
+            text-align: center;
 
         }
 
         .box5 {
-            height: 350px;
+            height: 370px;
             width: 100px;
             background-color: rgb(248, 181, 192);
+            text-align: center;
         }
+
+
+        @keyframes morph1 {
+            0% {
+                border-radius: 100% 50% 100% 50%;
+                /* transform: rotate(10deg); */
+            }
+
+            50% {
+                border-radius: 50% 100% 50% 100%;
+
+                /* transform: rotate(-10deg); */
+            }
+
+            100% {
+                border-radius: 100% 50% 100% 50%;
+
+                /* transform: rotate(10deg); */
+            }
+        }
+
+        .btn-outline-animation {
+            position: relative !important;
+
+            /* transform: rotate(-30deg); */
+        }
+
+        .btn-outline-animation:after {
+            position: absolute;
+            width: 100px;
+            height: 50px;
+            content: "";
+            border: 1px solid #fd7e14;
+            ;
+            left: -12px;
+            top: -5px;
+            animation: morph1 linear 2s 0s infinite;
+        }
+
+
+
+        @keyframes morph2 {
+            0% {
+                border-radius: 60% 80% 60% 80%;
+                /* transform: rotate(10deg); */
+            }
+
+            50% {
+                border-radius: 100% 50% 100% 50%;
+
+                /* transform: rotate(-10deg); */
+            }
+
+            100% {
+                border-radius: 60% 80% 60% 80%;
+
+
+                /* transform: rotate(10deg); */
+            }
+        }
+
+        .btn-outline-animation:before {
+            transform: rotate(10deg);
+            position: absolute;
+            width: 100px;
+            height: 50px;
+            content: "";
+            border: 1px solid #fd7e14;
+            ;
+            left: -12px;
+            top: -5px;
+            animation: morph2 linear 2s 0s infinite;
+            opacity: 0.6;
+        }
+       
+        .font-icon-first{
+            padding-left: 200px;
+        }
+
+        .discount-tag {
+      height: 50px;
+      width: 50px;
+      box-shadow: -3px 2px rgb(255, 166, 0);
+      border-radius: 50%;
+      padding-top: 10px;
+      margin-left: 20px;
+      margin-top: -350px;
+      color: white;
+      background-color: rgb(234, 59, 59);
+    }
+        
     </style>
 
 </head>
@@ -129,7 +194,7 @@
                         <a class="nav-link text-dark me-4" href="#">Contact us</a>
                     </li>
                 </ul>
-                <button class="btn btn-outline-warning primary-button">
+                <button class="btn btn-outline-animation">
                     Sign in
                 </button>
             </div>
@@ -169,9 +234,12 @@
 
                 <div class="col-sm-4">
                     <div class="d-flex justify-content-start  box1">
-                        <i class="fa-regular fa-heart ms-2 mt-2"></i>
-                        <img class="img-fluid" src="/assets/large_1631294836-removebg-preview.png" alt="">
+                        <i class="fa-regular fa-heart  ms-2 mt-2"></i>
+                        <img class="img-fluid image-first" src="/assets/large_1631294836-removebg-preview.png" alt="">
+                        
+                        
                     </div>
+                    
 
                 </div>
 
@@ -229,35 +297,32 @@
                 <div class="col-sm-12">
                     <div class="d-flex">
                         <div class="p-2 ms-3  flex-fill box2">
-                            <i class="fa-regular fa-heart ms-2 mt-2"></i>
-                            <img class="img-fluid"
-                            src="assets/31av5tR14oL-removebg-preview.png" alt="">
+                            <i class="fa-regular fa-heart font-icon-first ms-2 mt-2"></i>
+                            <img class="img-fluid" src="assets/31av5tR14oL-removebg-preview.png" alt="">
                             <p>Swipe Up * BROW GEL</p>
                             <p>$20.99</p>
-                           
+
                         </div>
                         <div class="p-2 ms-3  flex-fill box3">
-                            <i class="fa-regular fa-heart ms-2 mt-2"></i>
-                            <img class="img-fluid mt-5"
-                            src="assets/large_1631294836-removebg-preview.png" alt="">
+                            <i class="fa-regular fa-heart font-icon-first ms-2 mt-2"></i>
+                            <img class="img-fluid mt-5" src="assets/large_1631294836-removebg-preview.png" alt="">
                             <p class="mt-3">DREAMSTICK CREAM BRONZER</p>
                             <p>$20.99</p>
                         </div>
                         <div class="p-2 ms-3 flex-fill box4">
-                            <i class="fa-regular fa-heart ms-2 mt-2"></i>
-                            <img class="img-fluid"
-                            src="assets/pouch.png" alt="">
-                            <p>SUPERBLUSH</p>
-                            <p>$20.99</p>
-                        </div>
-                        <div class="p-2 ms-3  flex-fill box5">
-                            <i class="fa-regular fa-heart ms-2 mt-2"></i>
-                            <img class="img-fluid mt-4"
-                            src="assets/picture.png" alt="">
+                            <i class="fa-regular fa-heart font-icon-first ms-2 mt-2"></i>
+                            <img class="img-fluid" src="assets/pouch.png" alt="">
                             <p>THE POUCH MAKEUP BAG</p>
                             <p>$20.99</p>
                         </div>
-                      </div>
+                        <div class="p-2 ms-3  flex-fill box5">
+                            <i class="fa-regular fa-heart font-icon-first ms-2 mt-2"></i>
+                            <img class="img-fluid mt-4" src="assets/picture.png" alt="">
+                            <p>SUPERBLUSH</p>
+                            <p>$20.99</p>
+                            <div class="discount-tag">-20%</div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
