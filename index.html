@@ -28,19 +28,20 @@
     }
 
     @keyframes morph1 {
-            0%,
-            100% {
-                border-radius:50%;
-                transform: rotate(360deg);
-                /* background-color: rgb(255, 230, 0); */
-            }
-  
-            50% {
-                border-radius: 0%;
-                transform: rotate(360deg);
-                /* background-color:rgb(252, 181, 50); */
-            }
-        }
+
+      0%,
+      100% {
+        border-radius: 50%;
+        transform: rotate(360deg);
+        /* background-color: rgb(255, 230, 0); */
+      }
+
+      50% {
+        border-radius: 0%;
+        transform: rotate(360deg);
+        /* background-color:rgb(252, 181, 50); */
+      }
+    }
 
     /* .primary-button{
       
@@ -54,25 +55,17 @@
     /* width:30%;
     height:30%; */
     /* position: absolute; */
-    /* } */ */
-
-
-      /* Animation Outline */
-
-      .btn-outline-animation::after{
-
-        content:"";
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        border: 1px solid orange;
-
-      }
+    /* } */
+    */
+    /* Animation Outline */
 
 
 
 
-    
+
+
+
+
     .first-section {
       font-family: 'Gill Sans MT';
     }
@@ -93,6 +86,7 @@
 
 
     }
+    
 
     .second-image {
       width: 100px;
@@ -114,28 +108,96 @@
       color: rgb(244, 160, 4);
     }
 
-    .second-section-image {
-      height: 200px;
+
+     .second-section-image-first {
+      height: 160px;
       width: 200px;
       align-content: center;
     }
 
+    .font-icon-first{
+      padding-left: 200px;
+    }
+
+
+    .second-section-image-second {
+      
+      align-content: center;
+    }
+
+    .font-icon-second{
+      padding-left: 200px;
+    }
+
+    .second-section-image-third{
+      height: 190px;
+      width: 200px;
+      align-content: center;
+
+    }
+
+    .font-icon-third{
+      padding-left: 200px;
+    }
+
+
+    .second-section-text-first{
+      margin-top: -26px;
+    }
+
+    .second-section-text-second{
+      margin-top:-5px;
+    }
+
+    .second-section-image-fourth{
+      margin-top: -10px;
+      height: 190px;
+      width: 200px;
+      align-content: center;
+
+    }
+
+    .font-icon-fourth{
+      padding-left: 200px;
+    }
+
+    .second-section-text-third{
+      margin-top: -11px;
+    }
+
+
+
+
+
+
     .box1 {
       background-color: rgb(162, 233, 210);
+      height:300px;
+      width: 300px;
+      text-align: center;
     }
 
     .box2 {
       background-color: rgb(247, 210, 216);
+      height:300px;
+      width: 300px;
+      text-align: center;
     }
 
     .box3 {
-     
+
       background-color: rgb(230, 186, 147);
+      height:300px;
+      width: 300px;
+      text-align: center;
     }
 
     .box4 {
-     
+
       background-color: rgb(248, 181, 192);
+      height:300px;
+      width: 300px;
+      text-align: center;
     }
 
     .fourth-image {
@@ -192,6 +254,82 @@
     .box8 {
       height: 320px;
       background-color: rgb(248, 181, 192);
+    }
+
+
+    @keyframes morph2 {
+      0% {
+        border-radius: 100% 50% 100% 50%;
+        /* transform: rotate(10deg); */
+      }
+
+      50% {
+        border-radius: 50% 100% 50% 100%;
+
+        /* transform: rotate(-10deg); */
+      }
+
+      100% {
+        border-radius: 100% 50% 100% 50%;
+
+        /* transform: rotate(10deg); */
+      }
+    }
+
+    .btn-outline-animation {
+      position: relative !important;
+
+      /* transform: rotate(-30deg); */
+    }
+
+    .btn-outline-animation:after {
+      position: absolute;
+      width: 100px;
+      height: 50px;
+      content: "";
+      border: 1px solid #fd7e14;
+      ;
+      left: -12px;
+      top: -5px;
+      animation: morph2 linear 2s 0s infinite;
+    }
+
+
+
+    @keyframes morph3 {
+      0% {
+        border-radius: 60% 80% 60% 80%;
+        /* transform: rotate(10deg); */
+      }
+
+      50% {
+        border-radius: 100% 50% 100% 50%;
+
+        /* transform: rotate(-10deg); */
+      }
+
+      100% {
+        border-radius: 60% 80% 60% 80%;
+
+
+        /* transform: rotate(10deg); */
+      }
+    }
+
+
+
+    .btn-outline-animation:before {
+      transform: rotate(10deg);
+      position: absolute;
+      width: 100px;
+      height: 50px;
+      content: "";
+      border: 1px solid #fd7e14;
+      ;
+      left: -12px;
+      top: -5px;
+      animation: morph3 linear 2s 0s infinite;
+      opacity: 0.6;
     }
   </style>
 
@@ -281,28 +419,28 @@
         <div class="col-sm-12">
           <div class="d-flex">
             <div class="me-3  box1 flex-fill">
-              <i class="fa-regular fa-heart ms-2"></i>
-              <img class="img-fluid second-section-image " src="/assets/large_1631294836-removebg-preview.png" alt="">
+              <i class="fa-regular fa-heart ms-2 font-icon-first"></i>
+              <img class="img-fluid second-section-image-first " src="/assets/large_1631294836-removebg-preview.png" alt="">
               <p>DREAMSTICK CREAM BRONZER</p>
               <p>$20.99</p>
             </div>
             <div class="me-3 box2 flex-fill">
-              <i class="fa-regular fa-heart ms-2 mt-2"></i>
-              <img class="img-fluid second-section-image" src="/assets/makeupplate.png" alt="">
+              <i class="fa-regular fa-heart ms-2 mt-2 font-icon-second"></i>
+              <img class="img-fluid second-section-image-second " src="/assets/makeupplate.png" alt="">
               <p>IDENTIFY EYE SHADOW PLATE</p>
               <p>$20.99</p>
             </div>
             <div class="me-3  box3  flex-fill">
-              <i class="fa-regular fa-heart ms-2 mt-2"></i>
-              <img class="img-fluid second-section-image" src="/assets/pouch.png" alt="">
-              <p>THE POUCH MAKEUP BAG</p>
-              <p>$20.99</p>
+              <i class="fa-regular fa-heart ms-2 mt-2 font-icon-third"></i>
+              <img class="img-fluid second-section-image-third pb-4" src="/assets/pouch.png" alt="">
+              <p class="second-section-text-first">THE POUCH MAKEUP BAG</p>
+              <p class="second-section-text-second">$20.99</p>
             </div>
             <div class="me-3  box4 flex-fill">
-              <i class="fa-regular fa-heart ms-2 "></i>
-              <img class="img-fluid second-section-image" src="/assets/picture.png" alt="">
-              <p>Superblush</p>
-              <p>$20.99</p>
+              <i class="fa-regular fa-heart ms-2 font-icon-fourth "></i>
+              <img class="img-fluid second-section-image-fourth" src="/assets/picture.png" alt="">
+              <p class="second-section-text-third">SUPERBLUSH</p>
+              <p class="second-section-text-fourth">$20.99</p>
             </div>
           </div>
         </div>
