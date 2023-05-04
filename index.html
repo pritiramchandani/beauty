@@ -473,6 +473,84 @@
       height: 200px;
       width: 200px;
     }
+
+
+
+
+         
+@keyframes morph4 {
+      0% {
+        border-radius: 100% 50% 100% 50%;
+        /* transform: rotate(10deg); */
+      }
+
+      50% {
+        border-radius: 50% 100% 50% 100%;
+
+        /* transform: rotate(-10deg); */
+      }
+
+      100% {
+        border-radius: 100% 50% 100% 50%;
+
+        /* transform: rotate(10deg); */
+      }
+    }
+
+    .first-section-btn{
+        position: relative !important;
+        background-color: #fd7e14;
+    }
+
+    .first-section-btn:after {
+      position: absolute;
+      width:40px;
+      height:40px;
+      content: "";
+      border: 1px solid #fd7e14;
+      left:0px;
+      top: -3px;
+      animation: morph4 linear 2s 0s infinite;
+    }
+
+
+             
+@keyframes morph5 {
+      0% {
+        border-radius: 100% 50% 100% 50%;
+        /* transform: rotate(10deg); */
+      }
+
+      50% {
+        border-radius: 50% 100% 50% 100%;
+
+        /* transform: rotate(-10deg); */
+      }
+
+      100% {
+        border-radius: 100% 50% 100% 50%;
+
+        /* transform: rotate(10deg); */
+      }
+    }
+
+    .first-section-btn-second{
+        position: relative !important;
+        background-color: #fd7e14;
+    }
+
+    .first-section-btn-second:after {
+      position: absolute;
+      width:40px;
+      height:40px;
+      content: "";
+      border: 1px solid #fd7e14;
+      left:0px;
+      top: -3px;
+      animation: morph5 linear 2s 0s infinite;
+    }
+
+
   </style>
 
 </head>
@@ -631,7 +709,7 @@
               labore porro quae laudantium fuga assumenda numquam animi, ipsum, magnam.</p>
 
             <div class=" first-section-btn-text">Read more
-              <button class="btn btn-warning rounded-circle">
+              <button class="btn first-section-btn-second rounded-circle">
                 <i class="fa-solid fa-arrow-right text-white"></i>
               </button>
             </div>
