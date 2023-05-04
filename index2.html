@@ -165,6 +165,123 @@ background-color: rgb(2, 104, 68);
 }
 
 
+
+
+/* Animation */
+
+
+@keyframes morph1 {
+      0% {
+        border-radius: 100% 50% 100% 50%;
+        /* transform: rotate(10deg); */
+      }
+
+      50% {
+        border-radius: 50% 100% 50% 100%;
+
+        /* transform: rotate(-10deg); */
+      }
+
+      100% {
+        border-radius: 100% 50% 100% 50%;
+
+        /* transform: rotate(10deg); */
+      }
+    }
+
+    .btn-outline-animation {
+      position: relative !important;
+
+      /* transform: rotate(-30deg); */
+    }
+
+    .btn-outline-animation:after {
+      position: absolute;
+      width: 100px;
+      height: 50px;
+      content: "";
+      border: 1px solid #fd7e14;
+      ;
+      left: -12px;
+      top: -5px;
+      animation: morph1 linear 2s 0s infinite;
+    }
+
+
+
+    @keyframes morph2 {
+      0% {
+        border-radius: 60% 80% 60% 80%;
+        /* transform: rotate(10deg); */
+      }
+
+      50% {
+        border-radius: 100% 50% 100% 50%;
+
+        /* transform: rotate(-10deg); */
+      }
+
+      100% {
+        border-radius: 60% 80% 60% 80%;
+
+
+        /* transform: rotate(10deg); */
+      }
+    }
+
+    .btn-outline-animation:before {
+      transform: rotate(10deg);
+      position: absolute;
+      width: 100px;
+      height: 50px;
+      content: "";
+      border: 1px solid #fd7e14;
+      ;
+      left: -12px;
+      top: -5px;
+      animation: morph2 linear 2s 0s infinite;
+      opacity: 0.6;
+    }
+
+   
+
+        
+@keyframes morph3 {
+      0% {
+        border-radius: 100% 50% 100% 50%;
+        /* transform: rotate(10deg); */
+      }
+
+      50% {
+        border-radius: 50% 100% 50% 100%;
+
+        /* transform: rotate(-10deg); */
+      }
+
+      100% {
+        border-radius: 100% 50% 100% 50%;
+
+        /* transform: rotate(10deg); */
+      }
+    }
+
+    .second-page-btn{
+        position: relative !important;
+        background-color: #fd7e14;
+    }
+
+    .second-page-btn:after {
+      position: absolute;
+      width:39px;
+      height:39px;
+      content: "";
+      border: 1px solid #fd7e14;
+      left:0px;
+      top: -3px;
+      animation: morph3 linear 2s 0s infinite;
+    }
+
+
   
         
     </style>
@@ -198,9 +315,9 @@ background-color: rgb(2, 104, 68);
                         <a class="nav-link text-dark me-4" href="#">Contact us</a>
                     </li>
                 </ul>
-                <button class="btn btn-outline-warning primary-button">
+                <button class="btn btn-outline-animation">
                     Sign in
-                </button>
+                  </button>
             </div>
         </div>
     </nav>
@@ -304,7 +421,7 @@ background-color: rgb(2, 104, 68);
                 <div class="col-sm-12">
                     <div class=" d-flex justify-content-center mt-5  text-warning">
                        <h5>ALL PRODUCT</h5>
-                        <button class="btn btn-warning rounded-circle">
+                        <button class="btn second-page-btn ms-1 rounded-circle">
                             <i class="fa-sharp fa-solid fa-arrow-down text-white"></i>
                         </button>
                       </div>
